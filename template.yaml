@@ -26,3 +26,8 @@ Resources:
           Properties:
             Path: /hello
             Method: get
+  HelloWorldUrl: # 関数URLを定義
+    Type: AWS::Lambda::Url
+    Properties:
+      TargetFunctionArn: !Ref HelloWorldFunction
+      AuthType: NONE
