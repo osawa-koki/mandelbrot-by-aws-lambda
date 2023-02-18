@@ -96,3 +96,10 @@ sam local invoke
 sam build --use-container
 sam deploy[ --guided]
 ```
+
+## 自分用メモ
+
+### ラムダで文字列以外を返す
+
+戻り値の辞書データの`isBase64Encoded`を`True`にし、`Body`にbase64エンコードしたバイナリデータを入れる。  
+そのまま返そうとすると、文字列として解析されてエラーが発生する。  
