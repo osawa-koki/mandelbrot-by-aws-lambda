@@ -99,7 +99,7 @@ sam local invoke
 
 ```shell
 sam build --use-container
-sam deploy[ --guided]
+sam deploy [--guided]
 ```
 
 ## 自分用メモ
