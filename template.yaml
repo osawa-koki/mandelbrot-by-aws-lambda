@@ -8,7 +8,7 @@ Description: >
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
   Function:
-    Timeout: 3
+    Timeout: 60
     MemorySize: 128
 
 Resources:
@@ -20,7 +20,6 @@ Resources:
       Runtime: python3.9
       Architectures:
         - x86_64
-      Timeout: 50
       Events:
         HelloWorld:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
