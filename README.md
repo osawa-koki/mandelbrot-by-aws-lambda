@@ -1,6 +1,6 @@
 # mandelbrot-by-aws-lambda
 
-AWS Lambdaでマンデルブロ集合を描画するサンプルです。  
+🌵🌵🌵 AWS Lambdaでマンデルブロ集合を描画するサンプルです。  
 
 ## イロイロ情報
 
