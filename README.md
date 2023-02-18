@@ -104,6 +104,14 @@ sam build --use-container
 sam deploy [--guided]
 ```
 
+初回デプロイ後はリソースベースのポリシーでパブリックアクセスを許可する必要があります。  
+これは、セキュリティ上の理由から、デフォルトでは許可されておらず、AWSコンソールから許可することもできません。  
+※[公式サイト](https://docs.aws.amazon.com/ja_jp/lambda/latest/dg/urls-auth.html)より。  
+この状態で、デプロイしたAPIのURLにアクセスすると、`403 Forbidden`が返ってきます。  
+
+関数を選択し、「設定 - 関数URL」へ進み、編集タブをクリックし、JSONコードの`principal`を`*`に変更します。  
+これで保存するとアクセスできます。  
+
 ## 自分用メモ
 
 ### ラムダで文字列以外を返す
