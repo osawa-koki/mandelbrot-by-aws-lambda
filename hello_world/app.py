@@ -40,8 +40,8 @@ def lambda_handler(event, context):
 
         width = 512
         height = 512
-        x_min = -2.2
-        x_max = 1.8
+        x_min = -2.5
+        x_max = 1.5
         y_min = -2.0
         y_max = 2.0
         iterations = 100
