@@ -1,6 +1,7 @@
 import json
-
-import requests
+import base64
+import io
+from PIL import Image
 
 
 def lambda_handler(event, context):
@@ -25,18 +26,26 @@ def lambda_handler(event, context):
         Return doc: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html
     """
 
-    try:
-        ip = requests.get("http://checkip.amazonaws.com/")
-    except requests.RequestException as e:
-        # Send some context about this error to Lambda Logs
-        print(e)
+    width = 200
+    height = 200
 
-        raise e
+    # 黒い画像を作成
+    image = Image.new('RGB', (width, height), (0, 0, 0))
 
+    # 画像をバイトデータに変換
+    with io.BytesIO() as output:
+        image.save(output, format="JPEG")
+        image_data = output.getvalue()
+
+    # Base64エンコード
+    encoded_image_data = base64.b64encode(image_data).decode('utf-8')
+
+    # 画像を返す
     return {
         "statusCode": 200,
-        "body": json.dumps({
-            "message": "hello world",
-            "location": ip.text.replace("\n", "")
-        }),
+        "headers": {
+            "Content-Type": "image/jpeg"
+        },
+        "body": encoded_image_data,
+        "isBase64Encoded": True
     }
