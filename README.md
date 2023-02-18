@@ -112,6 +112,8 @@ sam deploy [--guided]
 関数を選択し、「設定 - 関数URL」へ進み、編集タブをクリックし、JSONコードの`principal`を`*`に変更します。  
 これで保存するとアクセスできます。  
 
+![パブリックアクセスの許可](./docs/img/allow-public-access.gif)  
+
 ## 自分用メモ
 
 ### ラムダで文字列以外を返す
