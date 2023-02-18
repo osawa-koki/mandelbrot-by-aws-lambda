@@ -9,6 +9,11 @@
 [公式ページ](https://docs.aws.amazon.com/ja_jp/serverless-application-model/latest/developerguide/install-sam-cli.html)の説明に沿って、インストールします。  
 AWS SAM CLIとは、Serverless Application Model の略称でAWS Lambdaのローカル実行環境を提供するツールです。  
 
+---
+
+前提として、`AWS CLI`がインストールされている必要があります。  
+`AWS CLI`のインストール方法は、[公式ページ](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/install-cliv2.html)を参照してください。  
+
 ### ラムダプロジェクトの作成
 
 以下のコマンドで、プロジェクトを作成します。  
