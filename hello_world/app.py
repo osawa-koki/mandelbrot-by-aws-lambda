@@ -28,16 +28,6 @@ def lambda_handler(event, context):
     """
 
     try:
-        # パラメタの取得
-        # width = (int)(event.get(QUERY_STRING_PARAMETERS).get('width') or 512)
-        # height = (int)(event.get(QUERY_STRING_PARAMETERS).get('height') or 512)
-        # x_min = (float)(event.get(QUERY_STRING_PARAMETERS).get('x_min') or -2.2)
-        # x_max = (float)(event.get(QUERY_STRING_PARAMETERS).get('x_max') or 1.8)
-        # y_min = (float)(event.get(QUERY_STRING_PARAMETERS).get('y_min') or -2.0)
-        # y_max = (float)(event.get(QUERY_STRING_PARAMETERS).get('y_max') or 2.0)
-        # iterations = (int)(event.get(QUERY_STRING_PARAMETERS).get('iterations') or 100)
-        # threshold = (int)(event.get(QUERY_STRING_PARAMETERS).get('threshold') or 10)
-
         width = 512
         height = 512
         x_min = -2.5
