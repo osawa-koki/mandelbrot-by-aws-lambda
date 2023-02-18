@@ -57,20 +57,18 @@ def lambda_handler(event, context):
             else:
                 image.putpixel((x, y), (255, 255, 255))
 
-    # 画像をバイトデータに変換
-    with io.BytesIO() as output:
-        image.save(output, format="png")
-        image_data = output.getvalue()
-
-    # Base64エンコード
-    encoded_image_data = base64.b64encode(image_data)
+    # 画像をBASE64エンコード
+    buffered = io.BytesIO()
+    image.save(buffered, format="PNG")
+    encoded_image_data = base64.b64encode(buffered.getvalue()).decode('utf-8')
 
     # 画像を返す
     return {
         "statusCode": 200,
         "headers": {
-            "Content-Type": "image/png"
+            "Content-Type": "image/png",
+            "Parameters": json.dumps(event.get(QUERY_STRING_PARAMETERS)),
         },
         "body": encoded_image_data,
-        "isBase64Encoded": True
+        "isBase64Encoded": True,
     }
