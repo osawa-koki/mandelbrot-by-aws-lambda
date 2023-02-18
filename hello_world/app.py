@@ -83,5 +83,6 @@ def lambda_handler(event, context):
             "statusCode": 500,
             "body": json.dumps({
                 "message": str(e),
+                "project_name": "mandelbrot-by-aws-lambda",
             }),
         }
