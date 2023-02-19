@@ -131,6 +131,14 @@ sam deploy [--guided]
 
 ![パブリックアクセスの許可](./docs/img/allow-public-access.gif)  
 
+### 削除
+
+以下のコマンドで、AWS SAMで構築したリソースを削除できます。  
+
+```shell
+sam delete
+```
+
 ## 自分用メモ
 
 ### ラムダで文字列以外を返す
