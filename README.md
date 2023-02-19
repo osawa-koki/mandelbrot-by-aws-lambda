@@ -2,6 +2,7 @@
 
 🌵🌵🌵 AWS Lambdaでマンデルブロ集合を描画するサンプルです。  
 
+![成果物](./docs/img/fruit.png)  
 ![成果物](./docs/img/fruit.gif)  
 
 ## イロイロ情報
