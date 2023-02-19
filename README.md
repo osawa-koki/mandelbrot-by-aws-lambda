@@ -5,6 +5,14 @@
 ![成果物](./docs/img/fruit.png)  
 ![成果物](./docs/img/fruit.gif)  
 
+## 環境情報
+
+| Name | Version |
+| --- | --- |
+| AWS CLI | 2.9.17 |
+| AWS SAM CLI | 1.73.0 |
+| Docker | 20.10.17 |
+
 ## イロイロ情報
 
 ### AWS CLIのインストール
