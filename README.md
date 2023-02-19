@@ -7,6 +7,14 @@
 
 ## イロイロ情報
 
+### AWS CLIのインストール
+
+[公式ページ](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/install-cliv2.html)の説明に沿って、インストールします。  
+
+### Dockerのインストール
+
+[公式ページ](https://docs.docker.com/get-docker/)の説明に沿って、インストールします。  
+
 ### AWS SAM CLI のインストール
 
 [公式ページ](https://docs.aws.amazon.com/ja_jp/serverless-application-model/latest/developerguide/install-sam-cli.html)の説明に沿って、インストールします。  
