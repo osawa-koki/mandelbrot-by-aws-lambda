@@ -5,7 +5,23 @@
 ![成果物](./docs/img/fruit.png)  
 ![成果物](./docs/img/fruit.gif)  
 
+## 環境情報
+
+| Name | Version |
+| --- | --- |
+| AWS CLI | 2.9.17 |
+| AWS SAM CLI | 1.73.0 |
+| Docker | 20.10.17 |
+
 ## イロイロ情報
+
+### AWS CLIのインストール
+
+[公式ページ](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/install-cliv2.html)の説明に沿って、インストールします。  
+
+### Dockerのインストール
+
+[公式ページ](https://docs.docker.com/get-docker/)の説明に沿って、インストールします。  
 
 ### AWS SAM CLI のインストール
 
@@ -114,6 +130,14 @@ sam deploy [--guided]
 これで保存するとアクセスできます。  
 
 ![パブリックアクセスの許可](./docs/img/allow-public-access.gif)  
+
+### 削除
+
+以下のコマンドで、AWS SAMで構築したリソースを削除できます。  
+
+```shell
+sam delete
+```
 
 ## 自分用メモ
 
